@@ -1,0 +1,65 @@
+.grid-container {
+    display: grid;
+    grid-template: repeat(4, [row] minmax(130px, 1fr)) / repeat(3, [col] 1fr);
+      grid-gap: 20px;
+      margin-left: 10%;
+      margin-right:10%;
+      width:80%;
+      height:500px;
+  }
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4,
+  .item-5,
+  .item-6 {
+    align-items: center;
+    justify-items: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1em;
+    line-height: 1;
+    color: red;
+    border:2px solid orange;
+    border-radius:5px;
+    padding-top:5px;
+    padding-left: 10px;
+  }
+  .item-1 {
+    grid-column: col 1 / span 2;
+    grid-row: row 1;
+    background-color:#ffb24773;
+  }
+  
+  .item-2 {
+    grid-column: col 2/span 2;
+    grid-row: row 1 / span 2;
+    background-color:#ffb24773;
+    opacity: 0.8;
+  }
+  
+  .item-3 {
+    grid-column: col 1;
+    grid-row: row 2 / span 3;
+    background-color:#ffb24773;
+    z-index: 1;
+    opacity: 0.8;
+  }
+  
+  .item-4 {
+    grid-column: col 3 /span 1;
+    grid-row: row 3;
+    background-color:#ffb24773;
+  }
+  
+  .item-5 {
+    grid-column: col 2;
+    grid-row: row 4;
+    background-color:#ffb24773;
+  }
+  
+  .item-6 {
+    grid-column: col 3;
+    grid-row: row 4;
+    background-color:#ffb24773;
+  }
+  

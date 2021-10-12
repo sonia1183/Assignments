@@ -1,0 +1,37 @@
+#modal2 .modal-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:400px;
+}
+hr{
+    background-color:black;
+}
+#modal2 a.close-modal{
+    position: absolute;
+    top:20px;
+    right:20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+#modal2{
+    display:none;
+    background: rgba(0, 0, 0, 0.38);
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+}
+#modal2:target{
+    display:block;
+}
+.animate-top{
+    position:relative;
+    animation:animatetop 0.4s;
+}
+@keyframes animatetop{
+    from{top:-300px;opacity:0}
+    to{top:0;opacity:1}
+}

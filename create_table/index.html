@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table</title>
+        <style>
+           
+            table{
+                width: 70%;
+                border-right:10px solid black;
+                border-bottom:10px solid black;
+                border-top:10px solid grey;
+                border-left:10px solid grey;
+                text-align: center;
+                border-spacing: 2px;
+                white-space: normal;
+                border-collapse: collapse;
+            }
+            th,td{
+                padding:10px;
+                border:2px solid black;
+            }
+            #office{
+                background-color: #f7c78c;
+            }
+            #meeting{
+                background-color: rgb(206, 202, 202);
+            }
+            #mat{
+                background-color: rgb(87, 236, 87);
+            }
+            #CSC{
+                background-color: #FF00FF;
+            }
+            .right{
+                text-align: right;
+            }
+            #small{
+                width:130px;
+            }
+            caption{
+                color:mediumpurple;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption><h2>Table Assignment</h2></caption>
+            <tbody>
+            <tr>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th id="small">Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr>
+                <td class="right">1:00</td>
+                <td rowspan="2" id="office">Office</td>
+                <td> </td>
+                <td rowspan="2" id="office">Office</td>
+                <td rowspan="8" id="office" id="small">Office Hours by Appt</td>
+                <td rowspan="2" id="office">Office</td>
+            </tr>
+            <tr>
+                <td class="right">1:30</td>
+                <td rowspan="2"id="meeting">Dept Meeting</td>
+            </tr>
+            <tr>
+                <td class="right">2:00</td>
+                <td rowspan="3" id="mat">MAT 108</td>
+                <td rowspan="3" id="mat">MAT 108</td>
+                <td rowspan="3" id="mat">MAT 108</td>
+            </tr>
+            <tr>
+                <td class="right">2:30</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="right">3:00</td>
+                <td rowspan="3" id="meeting">EC Meeting</td>
+            </tr>
+            <tr>
+                <td class="right">3:30</td>
+                <td rowspan="3" id="CSC">CSC 205</td>
+                <td rowspan="3" id="CSC">CSC 205</td>
+                <td rowspan="3" id="CSC">CSC 205</td>
+            </tr>
+            <tr>
+                <td class="right">4:00</td>
+            </tr>
+            <tr>
+                <td class="right">4:30</td>
+                <td></td>
+            </tr>
+        </tbody>
+        </table>
+    </body>
+</html>
